@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sample </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    </head>
+    <body>
+        <img src="stars.png" id="stars">
+
+    <section>
+        <header>
+            <div class="left">
+            <a href="#" class="logo">Logo</a></div>
+            <div class="middle"> <input class="search" type="text" placeholder="Search">
+                <button class="sbutton">
+                  <img class="button-icon" src="search.svg">
+                </button></div>
+            <ul>
+            <li><a href="#title">Home</a></li>
+            <li><a href="#carousel">About</a></li>
+            <li><a href="#sec">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>         
+
+        </header>
+        
+    </section>
+<section id="title">
+    <center><h1>Kiah Monpara</h1></center>
+    <center><p>Sample Site</p></center>
+    <img src="icons8-stars-48.png" id="text">
+
+
+</section>
+<script>
+                let text=document.getElementById('text');
+                window.addEventListener('scroll', function(){
+                    let value=window.scrollY;
+                    text.style.marginRight=value*3+'px';
+                    text.style.marginTop=value*1+'px';
+
+})
+</script>
+<div id="carousel">
+        <section class="contain">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    
+                    <img id="slide-1" src="https://cdn.wallpapersafari.com/22/58/M15vbf.jpg" alt="3D rendering of an imaginary orange planet in space" />
+                    <img id="slide-2" src="https://i.pinimg.com/736x/29/32/87/29328749be9f41164f0fea8569fdfa47.jpg" alt="3D rendering of an imaginary green planet in space" />
+                    <img id="slide-3" src="https://everydaypower.com/wp-content/uploads/2021/05/50-Star-Quotes-About-the-Beauty-of-the-Night-Sky.jpg" alt="3D rendering of an imaginary blue planet in space" />
+                    <img id="slide-4" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Comet_and_tail_animation.gif"/>
+
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+
+                </div>
+            </div>
+        </section>
+    </div>
+        <div id="sec">
+            <form>
+                <fieldset>
+                <legend>Form</legend>
+                <label for="fname" id="lab">Full name:</label>
+                <input type="text" id="fname" name="fname" value="">
+                <label for="gender" class="gender">Gender: </label>  
+              <input  type="radio" id="gender" name="gender" value="male"/><a >Male  </a>
+              <input  type="radio" id="gender" name="gender" value="female"/><a >Female  </a>   
+              <input  type="radio" id="gender" name="gender" value="other"/><a >Other  </a><br/>  
+
+                <label for="email">Email: </label>  
+                <input type="email" id="email" name="email"/> 
+                <label for="Phone" class="phone">Phone No: </label>  
+                <input type="text" id="Phone" name="Phone No"/> <br/> 
+                <a>Enter your query:</a>  <br>
+                <textarea></textarea><br> 
+                <a class="terms"> Do you agree to be contacted regarding our newsletter</a><br/>
+                
+                <input type="checkbox" id="agree" name="agree" value="Yes"/>  
+                <label for="cricket">Yes I Agree</label> <br>
+                <input type="submit" value="Submit" class="submit">
+            </fieldset>
+            </form>
+        </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 id="contact">Contact Information</h4>
+                <ul>
+                    <li><a href="#">+91 00000 00000</a></li>
+                    <li><a href="#">xyz@gmail.com</a></li>
+                    <li><a href="#">Mumbai, India </a></li>
+                </ul>
+            </div>
+            
+           
+        </div>
+    </div>
+</footer>
+    </body>
+</html>
